@@ -21,7 +21,7 @@
 
 # 討論
 1. Linear SVM與kernel-based SVM所訓練的hyperplane有何差異？
-   兩者主要區別在於它們對超平面形狀和特點的處理方式。前者適用於線性可分數據；而後者則可處理更複雜的非線性數據分佈，因為它可以在高維度空間中找出hyperplane。kernel-based SVM鈄過選擇適當的核函數，能夠適應各種數據分佈，包括非線性和高度不可分的情況。
+- 兩者主要區別在於它們對超平面形狀和特點的處理方式。前者適用於線性可分數據；而後者則可處理更複雜的非線性數據分佈，因為它可以在高維度空間中找出hyperplane。kernel-based SVM鈄過選擇適當的核函數，能夠適應各種數據分佈，包括非線性和高度不可分的情況。
 
 2. 隨著kernel parameter的改變，RBF kernel與polynomial kernel所訓練的hyperplane可能有什麼變化？其與分類率的變化有何關聯？請嘗試解釋之。
 	- RBF kernel：隨著sigma增加，RBF kernel的hyperplane會更貼近支持向量，可能導致過擬合(overfitting)。
