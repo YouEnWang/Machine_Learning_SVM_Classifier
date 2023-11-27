@@ -24,9 +24,9 @@
    兩者主要區別在於它們對超平面形狀和特點的處理方式。前者適用於線性可分數據；而後者則可處理更複雜的非線性數據分佈，因為它可以在高維度空間中找出hyperplane。kernel-based SVM鈄過選擇適當的核函數，能夠適應各種數據分佈，包括非線性和高度不可分的情況。
 
 2. 隨著kernel parameter的改變，RBF kernel與polynomial kernel所訓練的hyperplane可能有什麼變化？其與分類率的變化有何關聯？請嘗試解釋之。
-   - RBF kernel：隨著sigma增加，RBF kernel的hyperplane會更貼近支持向量，可能導致過擬合(overfitting)。
-   - polynomial kernel：隨著poly增加，polynomial kernel的hyperplane會更複雜，能夠捕捉更多的數據特徵，但同樣可能導致過擬合(overfitting)。
-   - 合適的kernel參數能夠提高分類率，而過度調整kernel參數可能會導致過擬合，並對測試數據的性能產生負面影響，造成分類率下降。
+	- RBF kernel：隨著sigma增加，RBF kernel的hyperplane會更貼近支持向量，可能導致過擬合(overfitting)。
+	- polynomial kernel：隨著poly增加，polynomial kernel的hyperplane會更複雜，能夠捕捉更多的數據特徵，但同樣可能導致過擬合(overfitting)。
+	- 合適的kernel參數能夠提高分類率，而過度調整kernel參數可能會導致過擬合，並對測試數據的性能產生負面影響，造成分類率下降。
 
 3. 設定kernel parameter時，是否有方法避免hyperplane過度擬合(overfitting)的現象發生？若有請詳細討論。
    - 交叉驗證：通過k-fold 交叉驗證，可以測試不同kernel參數對不同訓練集與測試集組合的分類效果，以確保模型有好的泛化性能。
